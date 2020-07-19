@@ -14,6 +14,8 @@
 		3FBF477024C3F4D900D7E381 /* Airport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBF476F24C3F4D900D7E381 /* Airport.swift */; };
 		3FBF477624C3F69200D7E381 /* AirPortListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBF477424C3F69200D7E381 /* AirPortListViewController.swift */; };
 		3FBF477724C3F69200D7E381 /* AirPortListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FBF477524C3F69200D7E381 /* AirPortListViewController.xib */; };
+		3FBF477924C3F9F800D7E381 /* AirPortListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBF477824C3F9F800D7E381 /* AirPortListViewModel.swift */; };
+		3FBF477B24C3FAE100D7E381 /* AirPortCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBF477A24C3FAE100D7E381 /* AirPortCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		3FBF476F24C3F4D900D7E381 /* Airport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airport.swift; sourceTree = "<group>"; };
 		3FBF477424C3F69200D7E381 /* AirPortListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirPortListViewController.swift; sourceTree = "<group>"; };
 		3FBF477524C3F69200D7E381 /* AirPortListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AirPortListViewController.xib; sourceTree = "<group>"; };
+		3FBF477824C3F9F800D7E381 /* AirPortListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirPortListViewModel.swift; sourceTree = "<group>"; };
+		3FBF477A24C3FAE100D7E381 /* AirPortCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirPortCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,7 @@
 		3FBF477224C3F57700D7E381 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				3FBF477824C3F9F800D7E381 /* AirPortListViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -98,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				3FBF477524C3F69200D7E381 /* AirPortListViewController.xib */,
+				3FBF477A24C3FAE100D7E381 /* AirPortCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -174,6 +180,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FBF477024C3F4D900D7E381 /* Airport.swift in Sources */,
+				3FBF477924C3F9F800D7E381 /* AirPortListViewModel.swift in Sources */,
+				3FBF477B24C3FAE100D7E381 /* AirPortCollectionViewCell.swift in Sources */,
 				3FBF477624C3F69200D7E381 /* AirPortListViewController.swift in Sources */,
 				3FBF475B24C3F45100D7E381 /* AppDelegate.swift in Sources */,
 				3FBF475D24C3F45100D7E381 /* SceneDelegate.swift in Sources */,

@@ -13,4 +13,5 @@ struct Airport {
     let code: String
     let city: String
     let state: String
+    let timeZone: String
 }

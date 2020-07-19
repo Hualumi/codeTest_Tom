@@ -22,7 +22,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let window = UIWindow(windowScene: scene)
         self.window = window
         
-        let rootVC = AirPortListViewController(nibName: "AirPortListViewController", bundle: nil)
+        let viewModel = AirPortListViewModel()
+        let rootVC = AirPortListViewController(nibName: "AirPortListViewController", bundle: nil, viewModel: viewModel)
         let navRootVC = UINavigationController(rootViewController: rootVC)
         
         self.window?.rootViewController = navRootVC
