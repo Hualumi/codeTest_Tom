@@ -20,6 +20,7 @@
 		3FBF477F24C4013700D7E381 /* AirPortDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FBF477D24C4013700D7E381 /* AirPortDetailViewController.xib */; };
 		3FBF478124C4015400D7E381 /* AirPortDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBF478024C4015400D7E381 /* AirPortDetailViewModel.swift */; };
 		3FBF478424C402BA00D7E381 /* View+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBF478324C402B900D7E381 /* View+extension.swift */; };
+		3FBF478624C409E700D7E381 /* airport.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3FBF478524C409E700D7E381 /* airport.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		3FBF477D24C4013700D7E381 /* AirPortDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AirPortDetailViewController.xib; sourceTree = "<group>"; };
 		3FBF478024C4015400D7E381 /* AirPortDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirPortDetailViewModel.swift; sourceTree = "<group>"; };
 		3FBF478324C402B900D7E381 /* View+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+extension.swift"; sourceTree = "<group>"; };
+		3FBF478524C409E700D7E381 /* airport.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = airport.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 		3FBF475924C3F45100D7E381 /* airport_display */ = {
 			isa = PBXGroup;
 			children = (
+				3FBF478524C409E700D7E381 /* airport.csv */,
 				3FBF478224C402AB00D7E381 /* Helper */,
 				3FBF477324C3F5A200D7E381 /* View */,
 				3FBF477224C3F57700D7E381 /* ViewModel */,
@@ -186,6 +189,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FBF478624C409E700D7E381 /* airport.csv in Resources */,
 				3FBF476724C3F45700D7E381 /* LaunchScreen.storyboard in Resources */,
 				3FBF476424C3F45700D7E381 /* Assets.xcassets in Resources */,
 				3FBF477724C3F69200D7E381 /* AirPortListViewController.xib in Resources */,

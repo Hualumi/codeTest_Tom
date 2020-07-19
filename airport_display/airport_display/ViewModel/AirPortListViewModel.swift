@@ -10,10 +10,26 @@ import Foundation
 
 class AirPortListViewModel {
     
-    var airPorts: [Airport]
+    var airPorts: [Airport] = []
     
     init() {
-        airPorts = [.init(name: "1", code: "code", city: "city", state: "state", timeZone: "timezone2"),.init(name: "2", code: "code", city: "city", state: "state", timeZone: "timezone3"),.init(name: "3", code: "code", city: "city", state: "state", timeZone: "timezone5"),.init(name: "4", code: "code", city: "city", state: "state", timeZone: "timezone4"), ]
+        let fileURL = Bundle.main.url(forResource: "airport", withExtension: "csv")
+        do {
+            let file = try String(contentsOf: fileURL!)
+            let rows = file.components(separatedBy: .newlines)
+            for row in rows {
+                let input = row.components(separatedBy: "\t")
+                if input.count == 5{
+                    let newAiport: Airport = .init(name: input[4], code: input[0], city: input[2], state: input[3], timeZone: input[1])
+                    self.airPorts.append(newAiport)
+                }
+            }
+        } catch {
+            print(error)
+        }
+        
+//        let content = try! String(contentsOf: fileURL!, encoding: String.Encoding.utf8)
+//        let parsedCSV: [[String]] = content.components(separatedBy: "\n").map{ $0.components(separatedBy: ",")}
     }
     
     func sortByName() {
