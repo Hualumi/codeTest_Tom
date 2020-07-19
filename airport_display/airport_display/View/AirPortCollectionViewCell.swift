@@ -29,9 +29,7 @@ class AirPortCollectionViewCell: UICollectionViewCell {
             self.addSubview(v!)
             v?.translatesAutoresizingMaskIntoConstraints = false
         }
-        
         setUpConstraint()
-        
     }
     
     fileprivate func setUpConstraint() {
@@ -41,7 +39,6 @@ class AirPortCollectionViewCell: UICollectionViewCell {
             
             timeZoneLabel.leftAnchor.constraint(equalTo: self.leftAnchor, constant: inset),
             timeZoneLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -inset),
-            
         ])
     }
     
